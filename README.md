@@ -15,7 +15,7 @@ Package Container Delivery systemn
    `git clone https://github.com/ktsoaela/setshelo`
 
 2. Navigate to the project directory:</br>
-   `cd lipampiri`
+   `cd setshelo`
 
 3. Start the project through Docker</br>
    3.1. Create a docker environment </br>
