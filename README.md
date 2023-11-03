@@ -18,11 +18,11 @@ Package Container Delivery systemn
    `cd lipampiri`
 
 3. Start the project through Docker
-   31. Create a docker environment </br>
+   3.1. Create a docker environment </br>
    `docker build -t setshelo .`
 
-   32. Running the docker file </br>
+   3.2. Running the docker file </br>
    `docker run -p 8013:8013 setshelo`
 
-   33. Viewing the docker project </br>
+   3.3. Viewing the docker project </br>
    `http://localhost:8013`
