@@ -17,7 +17,7 @@ Package Container Delivery systemn
 2. Navigate to the project directory:</br>
    `cd lipampiri`
 
-3. Start the project through Docker
+3. Start the project through Docker</br>
    3.1. Create a docker environment </br>
    `docker build -t setshelo .`
 
