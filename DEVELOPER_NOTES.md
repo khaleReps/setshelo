@@ -54,6 +54,32 @@ and parcel can be signed on the app
 
 
 <!-- ========================================== -->
+Origainl Dockerfile
+
+`   # # Use an official Python runtime as a parent image
+    # FROM python:3.9-slim
+
+    # # Set the working directory in the container
+    # WORKDIR /app
+
+    # # Copy the entire project directory into the container at /app
+    # COPY . /app/
+
+    # # Install any needed packages specified in requirements.txt
+    # RUN pip install -r requirements.txt
+
+    # # Make port 8013 available to the world outside this container
+    # EXPOSE 8013
+
+    # # Define environment variable
+    # ENV NAME World
+
+    # # Run app.py when the container launches
+    # CMD ["python", "manage.py", "runserver", "0.0.0.0:8013"]
+`
+
+
+
 # Running the docker file
 
 docker build -t setshelo .
@@ -66,3 +92,14 @@ docker run -it --rm -v $(pwd):/app setshelo django-admin startproject SETSHELO .
 RUN git clone https://github.com/flutter/flutter.git -b stable
 ENV PATH="/app/flutter/bin:${PATH}"
 RUN flutter doctor -v
+
+# Create Container
+docker run -it -p 8013:8013 -v $(pwd):/app setshelo
+
+
+# create flutter app
+flutter create SETSHELO_APP
+
+# To run the app
+$ cd setshelo_app
+$ flutter run
