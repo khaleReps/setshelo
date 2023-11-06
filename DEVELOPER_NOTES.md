@@ -103,3 +103,6 @@ flutter create SETSHELO_APP
 # To run the app
 $ cd setshelo_app
 $ flutter run
+
+<!-- =============================== -->
+notes
